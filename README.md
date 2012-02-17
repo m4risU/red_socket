@@ -1,3 +1,5 @@
+# RedSocket [![Build Status](https://secure.travis-ci.org/m4risu/red_socket.png)](http://travis-ci.org/m4risu/red_socket)
+
 # RedSocket client
 
 Send notification for clients listening on HTML5 websockets. See more details on http://red-socket.com .
