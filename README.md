@@ -1,4 +1,4 @@
-# RedSocket [![Build Status](https://secure.travis-ci.org/m4risu/red_socket.png)](http://travis-ci.org/m4risu/red_socket)
+# RedSocket [![Build Status](https://secure.travis-ci.org/m4risU/red_socket.png?branch=master)](http://travis-ci.org/m4risU/red_socket)
 
 # RedSocket client
 
