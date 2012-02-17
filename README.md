@@ -10,21 +10,33 @@ Add to your Gemfile and run the `bundle` command to install it.
 gem "red_socket"
 ```
 
-**Requires Ruby 1.9 or later.**
+Create `config/initializers/red_socket.rb` file wit following config:
 
+```ruby
+RedSocket::Base.configure do |config|
+  config.account_id = "account_name" # within host name
+  config.api_key = "some_api_key"
+  config.api_secret = "some_secret_key"
+end
+```
+
+Sign up for an account on http://red-socket.com/signup to get your key pair.
+
+
+**Requires Ruby 1.9 or later.**
 
 ## Usage
 
 Call `RedSocket.notify('my_channel')` to send message to listening clients. By default it will send a 'notification' event which can be passed as the second argument.
 
 ```ruby
-RedSocket.notify('my_channel', 'my_custom_event')
+RedSocket::Base.notify('my_channel', 'my_custom_event')
 ```
 
 Additional message can be send within third parameter
 
 ```ruby
-RedSocket.notify('my_channel', 'my_custom_event', 'it can be for example a json message, so it can be parsed by the browser')
+RedSocket::Base.notify('my_channel', 'my_custom_event', 'it can be for example a json message, so it can be parsed by the browser')
 ```
 
 ## Development

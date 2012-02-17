@@ -2,9 +2,8 @@ require "red_socket/version"
 require "eventmachine"
 require "em-http"
 
-
 module RedSocket
-  class RedSocket
+  class Base
 
     def self.api_key
       @@api_key
