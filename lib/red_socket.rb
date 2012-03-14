@@ -29,6 +29,14 @@ module RedSocket
       @@api_secret = value
     end
 
+    def self.host
+      @@host ||= "red-socket.com"
+    end
+
+    def self.host=(value)
+      @@host = value
+    end
+
     def self.configure
       yield self
       self
@@ -37,7 +45,7 @@ module RedSocket
     def self.notify(channel, event="notification", message="")
       ::EventMachine.run {
         http = ::EventMachine::HttpRequest.
-            new("http://#{account_id}.subscriptions.dev/api/messages.json").
+            new("http://#{account_id}.#{host}/api/messages.json").
             post :body =>
                      {
                          'api_key' => api_key,
