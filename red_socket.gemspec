@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = RedSocket::VERSION
   s.authors     = ["Mariusz Wyrozebski"]
   s.email       = ["mariuszwyrozebski@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "http://red-socket.com"
   s.summary     = %q{Message sending wrapper for red-socket.com service.}
   s.description = %q{red-socket.com is a service providing push notifications to clients listening to websockets. Gem is a wrapper for the service to allow pushing messages.}
 
